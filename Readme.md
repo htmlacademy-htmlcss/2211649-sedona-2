@@ -2,7 +2,7 @@
 
 * Студент: [Александр Закарлюка](https://up.htmlacademy.ru/htmlcss-individual/2/user/2211649).
 * Наставник: [Евгения Подопригора](https://htmlacademy.ru/profile/id2387199).
-
+* Сайт: [Седона](https://zakarlyuka10.github.io/2211649-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
