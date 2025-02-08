@@ -33,16 +33,14 @@
         <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
       </li>
       <li>
-        <button class="navigation-button" type="button">
-          <span>Хочу сюда!</span>
-        </button>
+        <a class="header-button" href="#">Хочу сюда</a>
       </li>
     </ul>
-
     </nav>
   </header>
 
-  <main class="main-index">
+  <main class="main-container main-index">
+    <div class="page-container">
     <section class="main-logo">
     <h1 class="visually-hidden">Сайт о городе Седона в Аризоне</h1>
       <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону">
@@ -50,6 +48,7 @@
 
     <section class="clickbite">
       <h2 class="clickbite-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
 
     <section class="advantages">
@@ -97,7 +96,7 @@
             <p class="offers-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="offers-item">
-            <h3 class="offers-title">Сувениры</h3>
+            <h3 class="offers-titl">Сувениры</h3>
             <p class="offers-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
         </ul>
@@ -105,7 +104,7 @@
 
     <section class="finder">
       <h2 class="finder-title">Заинтересовались?</h2>
-        <p class="finder-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="finder-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="finder-button" type="button">
             <span>Поиск гостиницы в Седоне</span>
           </button>
@@ -116,13 +115,15 @@
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="subscription-mail">Email</label>
-          <input type="text" id="subscription-mail" name="subscription-mail" placeholder="Ваш e-mail">
+          <input class="subscribe-input" type="text" id="subscription-mail" name="subscription-mail" placeholder="Ваш e-mail">
           <button class="subscription-button" type="submit">Подписаться</button>
         </form>
     </section>
+    </div>
   </main>
 
   <footer class="page-footer">
+    <div class="page-footer-container">
       <ul class="social-list">
         <li class="social-item">
           <a class="button" href="https://vk.com/htmlacademy">
@@ -146,6 +147,7 @@
       <img class="academy-logo" src="images/logo-html.svg" width="115" height="33 " alt="Логотип HTML Академии">
       <span class="visually-hidden">HTML Academy</span>
     </a>
+    </div>
   </footer>
   </body>
 </html>
