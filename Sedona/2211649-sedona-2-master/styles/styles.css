@@ -46,6 +46,7 @@ body {
 
 .main-header {
   display: flex;
+  position: relative;
   width: 100%;
 }
 
@@ -72,7 +73,7 @@ button {
 
 .navigation-logo {
   align-self: flex-start;
-  margin-bottom: -6px;
+  margin-bottom: -8px;
   width: 140px;
   margin-left: auto;
   padding-left: 70px;
@@ -424,7 +425,6 @@ input {
   display: flex;
   flex-wrap: wrap;
   width: 200px;
-  margin-right: 41px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -480,6 +480,10 @@ input {
 .infrastructure-price {
   width: 288px;
   border: none;
+}
+
+.infrastructure-filter-list {
+  list-style-type: none;
 }
 
 .button-use {
@@ -553,13 +557,44 @@ input {
 }
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
   gap: 20px;
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-bottom: 80px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid;
+  border-color: #E5E5E5;;
+  border-radius: 4px;
+}
+
+.product-card-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.product-card-image {
+  margin: 0;
+  margin-bottom: 16px;
+  object-fit: contain;
+}
+
+.product-card-content {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
+}
+
+.product-card-price-number {
+  justify-self: end;
 }
 
 .product-card-link {
@@ -569,6 +604,8 @@ input {
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
 .product-card-price {
@@ -582,9 +619,12 @@ input {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  align-self: center;
   text-decoration: none;
   color: #ffffff;
   background-color:#756157;
+  padding: 8px 26px;
+  border-radius: 4px;
 }
 
 .button-favorites {
@@ -595,6 +635,7 @@ input {
   text-align: center;
   color: #ffffff;
   background-color: #82B3D3;
+  border-radius: 4px;
 }
 
 .product-card-rating {
@@ -602,9 +643,12 @@ input {
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  align-self: center;
   text-align: center;
   color: #333333;
   background-color: #f2f2f2;
+  border-radius: 4px;
+  padding: 9px 22px 8px 23px;
 }
 
 .button-choice {
@@ -676,4 +720,12 @@ input {
 .pagination-more {
   color: #000000;
   background: none;
+}
+
+.breadcrumbs {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-bottom: 40px;
 }
