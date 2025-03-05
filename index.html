@@ -15,10 +15,10 @@
 
     <ul class="navigation-list">
       <li class="navigation-item">
-        <a class="navigation-link navigation-link-current">Главная</a>
+        <a class="navigation-link navigation-link-current navigation-link-current-main">Главная</a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="#">О седоне</a>
+        <a class="navigation-link navigation-link-about" href="#">О седоне</a>
       </li>
       <li class="navigation-item">
         <a class="navigation-link" href="hotels.html">Гостиницы</a>
@@ -30,7 +30,10 @@
         <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="#"><span class="visually-hidden">Избранное</span></a>
+        <a class="navigation-link" href="#">
+          <svg class="icon-twelve" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><rect width="20" height="20" fill="#7DB54F" rx="10"/><path fill="#fff" d="M5.1 12.3h1.4V7.4l.1-.6-.4.5-1 .8-.4-.5L7 5.9h.3v6.4h1.4v.7H5v-.7ZM14 7.6l-.2 1-.6 1.2a10.9 10.9 0 0 1-1.4 2.1l-.5.4H14v.7h-4v-.3a33.1 33.1 0 0 0 1.8-2.2 9.7 9.7 0 0 0 1-1.9c.2-.3.2-.6.2-.9 0-.3 0-.6-.3-.8-.1-.2-.4-.3-.8-.3l-.7.1-.7.4-.3-.6.8-.5a3 3 0 0 1 1-.1l.8.1a1.5 1.5 0 0 1 1 1v.6Z"/></svg>
+            <span class="visually-hidden">Избранное</span>
+        </a>
       </li>
       <li>
         <a class="header-button" href="#">Хочу сюда</a>
@@ -99,13 +102,13 @@
           </li>
           <li class="offers-item offers-item-emty">
             <div class="offers-container">
-            <h3 class="offers-title">Еда</h3>
+            <h3 class="offers-title offers-title-food">Еда</h3>
             <p class="offers-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </div>
           </li>
           <li class="offers-item">
             <div class="offers-container">
-            <h3 class="offers-title">Сувениры</h3>
+            <h3 class="offers-title offers-title-souvenirs">Сувениры</h3>
             <p class="offers-description">Не только китайского, но и настоящего местного производства!</p>
             </div>
           </li>
@@ -136,17 +139,17 @@
     <div class="page-footer-container">
       <ul class="social-list">
         <li class="social-item">
-          <a class="button" href="https://vk.com/htmlacademy">
+          <a class="footer-social-link footer-social-vk" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="button" href="https://t.me/s/htmlacademy">
+          <a class="footer-social-link footer-social-telegram" href="https://t.me/s/htmlacademy">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
         <li class="social-item">
-          <a class="button" href="http://www.youtube.com/@HTMLAcademyTV">
+          <a class="footer-social-link footer-social-youtube" href="http://www.youtube.com/@HTMLAcademyTV">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
