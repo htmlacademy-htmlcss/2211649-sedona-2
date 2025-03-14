@@ -5,10 +5,10 @@
   <title>Гостиницы</title>
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 </head>
 <body>
-  <header class="main-header">
+  <header class="main-header" data-test="header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
         <img class="page-header-logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип города Седона">
@@ -28,11 +28,11 @@
 
     <ul class="navigation-list navigation-user">
       <li class="navigation-item">
-        <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+        <a class="navigation-link navigation-link-search" href="#"><span class="visually-hidden">Поиск</span></a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="#">
-          <span class="favorites-number">12</span>
+        <a class="navigation-link navigation-link-favorites" href="#">
+            <span class="favorites-number">12</span>
         </a>
       </li>
       <li>
@@ -43,7 +43,7 @@
     </nav>
   </header>
 
-  <main class="main-inner main-container">
+  <main class="main-inner main-container"  data-test="main">
     <div class="page-container">
     <div class="main-filter">
       <section class="infrastructure">
@@ -54,13 +54,13 @@
               <a class="breadcrumbs-link visually-hidden" href="index.html">Главная</a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link"><span class="hotels-simple">Гостиницы</span></a>
+              <a class="breadcrumbs-link"><span class="hotels-simple" tabindex="0">Гостиницы</span></a>
             </li>
           </ul>
         </header>
 
         <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="get">
-        <div class="hotel-container">
+        <div class="hotel-container" data-test="filter">
           <fieldset class="infrastructure-filter-group infrastructure-filter-group-first">
             <legend class="infrastructure-filter-title">Инфраструктура:</legend>
             <ul class="infrastructure-filter-list">
@@ -149,7 +149,7 @@
       </section>
     </div>
 
-    <section class="hotels-finder">
+    <section class="hotels-finder" data-test="catalog">
       <div class="hotels-finder-group">
       <h2 class="hotels-finder-title">Найдено гостиниц: 38</h2>
       <select class="hotels-finder-rating" name="select-control" aria-label="Сортировка">
@@ -244,6 +244,7 @@
         </div>
       </li>
     </ul>
+
     <div class="separator"></div>
     <div class="pagination-container">
     <ul class="pagination">
@@ -269,7 +270,7 @@
     </div>
     </section>
 
-    <section class="subscription-hotels">
+    <section class="subscription-hotels" data-test="subscribe">
       <h2 class="subscription-hotels-title">Подпишитесь на рассылку</h2>
         <p class="subscription-hotels-info">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -281,7 +282,7 @@
     </div>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer" data-test="footer">
     <div class="page-footer-container">
       <ul class="social-list">
         <li class="social-item">

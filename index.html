@@ -5,11 +5,11 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png"   href="images/favicon.png">
   </head>
   <body>
 
-  <header class="main-header">
+  <header class="main-header" data-test="header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html" aria-current="page">
         <img class="page-header-logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип города Седона">
@@ -29,10 +29,10 @@
 
     <ul class="navigation-list navigation-user">
       <li class="navigation-item">
-        <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+        <a class="navigation-link navigation-link-search" href="#"><span class="visually-hidden">Поиск</span></a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="#">
+        <a class="navigation-link navigation-link-favorites" href="#">
             <span class="favorites-number">12</span>
         </a>
       </li>
@@ -43,9 +43,9 @@
     </nav>
   </header>
 
-  <main class="main-container main-index">
+  <main class="main-container main-index"  data-test="main">
     <div class="page-container">
-    <section class="main-logo">
+    <section class="main-logo" data-test="hero">
     <h1 class="visually-hidden">Сайт о городе Седона в Аризоне</h1>
       <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону">
     </section>
@@ -54,7 +54,7 @@
       <h2 class="clickbite-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" data-test="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item advantages-large">
@@ -91,7 +91,7 @@
         <p class="welcome-description">Опытный персонал и качественное обслуживание!</p>
     </section>
 
-    <section class="offers">
+    <section class="offers" data-test="service">
       <h2 class="visually-hidden">Предложения</h2>
         <ul class="offers-list">
           <li class="offers-item">
@@ -115,7 +115,7 @@
         </ul>
     </section>
 
-    <section class="finder">
+    <section class="finder" data-test="search">
       <h2 class="finder-title">Заинтересовались?</h2>
         <p class="finder-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="finder-button" type="button">
@@ -132,12 +132,12 @@
           <input class="subscription-input" type="text" id="subscription-mail" name="subscription-mail" placeholder="Ваш e-mail">
           <button class="subscription-button" type="submit">Подписаться</button>
         </form>
+      </div>
     </section>
-    </div>
     </div>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer" data-test="footer">
     <div class="page-footer-container">
       <ul class="social-list">
         <li class="social-item">
@@ -169,59 +169,71 @@
   </footer>
 
   <div class="modal-container modal-container-close">
-    <div class="modal modal-auth">
+    <div class="modal modal-auth" data-test="modal">
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <div class="modal-wrappper">
         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="field-group">
+          <fieldset class="field-group">
             <label class="modal-lable" for="auth-date-in">Дата Заезда:</label>
             <input class="auth-form-field" id="auth-date-in" name="auth-date-in" type="text" placeholder="27 апреля 2020" required>
             <span class="warning">Мы не можем отправить вас в прошлое.</span>
-          </p>
-          <p class="field-group">
+          </fieldset>
+          <fieldset class="field-group">
             <label class="modal-lable" for="auth-date-out">Дата Выезда:</label>
             <input class="auth-form-field" id="auth-date-out" name="auth-date-out" type="text" placeholder="1 сентября 2023" required >
             <span class="free">На эти даты есть свободные номера. Пока есть.</span>
-          </p>
-          <p class="field-group field-group-adult">
-            <button class="button-minus-first button-modal-style" type="button"></button>
-            <svg class="button-style button-style-minus" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-              <path d="M3 9V11H17V9H3Z"/>
-              </svg>
+          </fieldset>
+          <div class="field-group-container">
+          <fieldset class="field-group field-group-adult">
             <label class="modal-lable modal-lable-small" for="adults">Взрослые:</label>
-            <input class="auth-form-field field" tabindex="-1" id="adults" name="adults" type="number" placeholder="2">
-            <button class="button-plus-first button-modal-style" type="button"></button>
-            <svg class="button-style button-style-plus" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="20" height="20">
-              <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
-              </svg>
-          </p>
-          <p class="field-group field-group-child form-label-icon">
-            <button class="button-minus button-modal-style" type="button"></button>
-            <svg class="button-style button-style-minus-second" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-              <path d="M3 9V11H17V9H3Z"/>
-              </svg>
-            <label class="modal-lable modal-lable-small modal-lable-small-childrens" for="childrens">Дети:</label>
-              <input class="auth-form-field field" tabindex="-1" id="childrens" name="childrens" type="number" placeholder="2">
-            <button class="button-plus button-modal-style" type="button"></button>
-            <svg class="button-style button-style-plus-second" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="20" height="20">
-              <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
-              </svg>
-            <span class="tooltip">
-              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 26 26" fill="none">
-                <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+            <div class="input-group">
+              <button class="button-minus-first button-modal-style" type="button">
+                <svg class="button-style button-style-minus" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                  <path d="M3 9V11H17V9H3Z"/>
                 </svg>
               </button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              <input class="auth-form-field field" tabindex="-1" id="adults" name="adults" type="number" placeholder="2">
+              <button class="button-plus-first button-modal-style" type="button">
+                <svg class="button-style button-style-plus" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="20" height="20">
+                  <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                </svg>
+              </button>
+            </div>
+          </fieldset>
+          <fieldset class="field-group field-group-child">
+            <label class="modal-lable modal-lable-small modal-lable-childrens" for="childrens">Дети:</label>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                <svg class="tooltip-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="none">
+                  <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+                </svg>
+              </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </span>
             </span>
-          </p>
+            <div class="input-group input-group-child">
+              <button class="button-minus button-modal-style" type="button">
+              <svg class="button-style button-style-minus-second" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <path d="M3 9V11H17V9H3Z"/>
+              </svg>
+              </button>
+              <input class="auth-form-field field" tabindex="-1" id="childrens" name="childrens" type="number" placeholder="2">
+              <button class="button-plus button-modal-style" type="button">
+                <svg class="button-style button-style-plus-second" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="20" height="20">
+                  <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                </svg>
+              </button>
+            </div>
+          </fieldset>
+          </div>
           <button class="button button-auth" type="submit">Найти</button>
           <button class="modal-close-button" tabindex="-1" type="button">
             <span class="visually-hidden">Закрыть</span>
-            <div class="modal-close" tabindex="0"></div>
           </button>
+          <div class="modal-close" tabindex="0"></div>
         </form>
       </div>
       </section>

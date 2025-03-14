@@ -29,8 +29,13 @@ body {
   line-height: 21px;
   font-weight: 400;
   font-style: normal;
-  color: #000000;
+  color: #000;
   background-color: #f2f2f2;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
 }
 
 .visually-hidden {
@@ -61,7 +66,7 @@ button {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
@@ -75,7 +80,7 @@ button {
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #fff;
   column-gap: 30px;
 }
 
@@ -108,13 +113,14 @@ button {
 }
 
 .navigation-link {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   padding: 20px 16px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   text-align: center;
-  color: #000000;
+  color: #000;
   text-decoration: none;
   position: relative;
 }
@@ -125,12 +131,11 @@ button {
 
 .navigation-link:focus {
   color: #756157;
-  outline: none;
 }
 
 .navigation-link:active {
   color: #756157;
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .navigation-link-current-main::before {
@@ -156,14 +161,14 @@ button {
   min-height: 20px;
 }
 
-.navigation-user .navigation-item:nth-child(1) .navigation-link {
-  background-image: url(../images/search.svg);
+.navigation-link-search {
+  background-image: url("../images/search.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.navigation-user .navigation-item:nth-child(2) .navigation-link {
-  background-image: url(../images/heart.svg);
+.navigation-link-favorites {
+  background-image: url("../images/heart.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -175,19 +180,18 @@ button {
   padding: 5px;
   border-radius: 50%;
   background-color: #7DB54F;
-  color: #ffffff;
+  color: #fff;
   font-size: 10px;
   line-height: 10px;
   font-weight: 400;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-
 }
 
 .main-container {
   flex-grow: 1;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .header-button {
@@ -196,7 +200,7 @@ button {
   line-height: 20px;
   font-weight: 700;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
@@ -212,12 +216,11 @@ button {
 
 .header-button:focus {
   background-color: #615048;
-  outline: none;
 }
 
 .header-button:active {
-  color: #ffffff;
-  opacity: 30%;
+  color: #fff;
+  opacity: 0.3;
   background-color: #756157;
 }
 
@@ -226,7 +229,7 @@ button {
 }
 
 .main-logo {
-  color: #000000;
+  color: #000;
   background-color: #c7cafe;
   background-image: url("../images/vector.svg"), url("../images/background.jpg");
   background-size: 100% auto, cover;
@@ -239,11 +242,8 @@ button {
 .clickbite {
   text-align: center;
   margin: 0 auto;
-  padding-top: 69px;
-  padding-left: 290px;
-  padding-right: 290px;
-  padding-bottom: 141px;
-  background-color: #ffffff;
+  padding: 69px 290px 141px;
+  background-color: #fff;
 }
 
 .clickbite-title {
@@ -258,7 +258,7 @@ button {
 .page-container {
   width: 1200px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .logo {
@@ -279,13 +279,12 @@ button {
 .advantages-subtitle {
   padding: 0;
   margin: 0;
-  color: #ffffff;
+  color: #fff;
 }
 
 .advantages-item {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   flex-grow: 1;
   padding: 113px 85px;
   width: 400px;
@@ -304,15 +303,15 @@ button {
 }
 
 .advantages-light {
-  background-color: rgba( 131, 179, 211, 0.12);
+  background-color: rgb( 131 179 211 / 12%);
 }
 
 .advantages-medium {
-  background-color: rgba( 131, 179, 211, 0.2);
+  background-color: rgba( 131 179 211 / 20%);
 }
 
 .advantages-description {
-  color: #333333;
+  color: #333;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -326,13 +325,13 @@ button {
   width: 60px;
   left: 85px;
   right: 85px;
-  background-color: #000000;
-  opacity: 30%;
+  background-color: #000;
+  opacity: 0.3;
   content: "";
 }
 
 .advantages-text {
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   margin: 0 auto;
 }
@@ -343,7 +342,7 @@ button {
   margin: 0;
   padding: 0;
   width: 100%;
-  color: #ffffff;
+  color: #fff;
   background-color:#82B3D3;
   justify-content: end;
 }
@@ -363,7 +362,7 @@ button {
 
 .advantages-photo {
   width: 800px;
-  height: 385px;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -373,7 +372,7 @@ button {
   padding-left: 347px;
   padding-right: 347px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .welcome-title {
@@ -389,7 +388,7 @@ button {
   font-size: 22px;
   line-height: 28px;
   font-weight: 400;
-  color: #333333;
+  color: #333;
   margin-top: 20px;
   margin-bottom: 64px;
 }
@@ -411,11 +410,11 @@ button {
 .offers-item {
   width: 400px;
   margin: 0 auto;
-  background-color: rgba( 131, 179, 211, 0.12);
+  background-color: rgb( 131 179 211 / 12%);
 }
 
 .offers-item-emty{
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .offers-title {
@@ -426,25 +425,25 @@ button {
   margin: 0;
   padding-bottom: 30px;
   padding-top: 101px;
-  background-image: url(../images/home.svg);
+  background-image: url("../images/home.svg");
   background-repeat: no-repeat;
   background-position: top;
 }
 
 .offers-title-food {
-  background-image: url(../images/food.svg);
+  background-image: url("../images/food.svg");
   background-repeat: no-repeat;
   background-position: top;
 }
 
 .offers-title-souvenirs {
-  background-image: url(../images/gift.svg);
+  background-image: url("../images/gift.svg");
   background-repeat: no-repeat;
   background-position: top;
 }
 
 .offers-description {
-  color: #333333;
+  color: #333;
   margin: 0;
   padding: 0;
   padding-bottom: 81px;
@@ -461,7 +460,7 @@ button {
   text-align: center;
   padding: 96px 304px;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .finder-title {
@@ -478,7 +477,7 @@ button {
   font-size: 22px;
   line-height: 28px;
   font-weight: 400;
-  color: #333333;
+  color: #333;
   margin: 0;
   margin-bottom: 54px;
 }
@@ -494,12 +493,11 @@ button {
 
 .finder-button:focus {
   background-color: #615048;
-  outline: none;
 }
 
 .finder-button:active {
-  color: #ffffff;
-  opacity: 30%;
+  color: #fff;
+  opacity: 0.3;
   background-color: #756157;
 }
 
@@ -511,9 +509,9 @@ button {
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   background-color: #c7cafe;
-  background-image: url(../images/subscribe.jpg);
+  background-image: url("../images/subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -522,9 +520,8 @@ button {
 .subscription-container {
   display: flex;
   width: 684px;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: 96px 258px 104px 258px;
+  flex-flow: column wrap;
+  margin: 96px 258px 104px;
 }
 
 .subscription-title {
@@ -566,7 +563,7 @@ button {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   background-color: #82B3D3;
   text-transform: uppercase;
   padding: 8px 50px;
@@ -582,12 +579,11 @@ button {
 
 .subscription-button:focus {
   background-color: #68A2CA;
-  outline: none;
 }
 
 .subscription-button:active {
-  color: #ffffff;
-  opacity: 30%;
+  color: #fff;
+  opacity: 0.3;
 }
 
 .subscription-button:disabled {
@@ -625,21 +621,24 @@ button {
   padding: 12px;
   border: none;
   border-radius: 4px 0 0 4px;
-  -moz-appearance: textfield;
+  overflow: hidden;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .price-input:focus {
   outline: 3px solid #83B3D3;
-  border-radius: 4px 0 0 px;
+  border-radius: 4px;
 }
 
 .price-input::placeholder {
-  color: #000000;
+  color: #000;
 }
 
 .price-input::-webkit-outer-spin-button,
 .price-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -653,16 +652,15 @@ button {
   gap: 2px;
 }
 
-
 .phone {
-  color: #000000;
+  color: #000;
   width: 720px;
   text-align: center;
   text-decoration: none;
 }
 
 .icon {
-  fill: #000000;
+  fill: #000;
 }
 
 .phone:hover {
@@ -671,12 +669,11 @@ button {
 
 .phone:focus {
   color: #756157;
-  outline: none;
 }
 
 .phone:active {
   color: #756157;
-  opacity: 30%
+  opacity: 0.3;
 }
 
 .page-footer-container {
@@ -686,7 +683,7 @@ button {
   margin: 0 auto;
   padding: 40px 70px 30px;
   justify-content: space-between;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .social-list {
@@ -719,10 +716,16 @@ button {
   display: block;
   width: 48px;
   max-height: 40px;
-  background-color: #ffffff;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 22px 17px;
+}
+
+.input-group svg {
+  width: 20px;
+  height: 20px;
+  fill: #000;
 }
 
 .footer-social {
@@ -733,29 +736,21 @@ button {
   fill: #68A2CA;
 }
 
-.footer-social-link:focus {
-  outline: none;
-}
-
 .footer-social-link:focus svg {
   fill:#68A2CA;
 }
 
 .footer-social:active {
   fill: #68A2CA;
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .academy-logo-footer {
-  fill: #000000;
+  fill: #000;
 }
 
 .academy-logo-footer:hover {
   fill: #756157;
-}
-
-.academy-link:focus {
-  outline: none;
 }
 
 .academy-link:focus svg {
@@ -764,7 +759,7 @@ button {
 
 .academy-logo-footer:active {
   color: #756157;
-  opacity: 30%
+  opacity: 0.3;
 }
 
 .inner-header {
@@ -776,7 +771,7 @@ button {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   margin: 0 auto;
   padding-top: 32px;
   margin-bottom: 8px;
@@ -784,23 +779,26 @@ button {
 
 .main-filter {
   background-color: #c7cafe;
-  background-image: url(../images/filtr.jpg);
+  background-image: url("../images/filtr.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 1200px;
-  height: 412px;
+  min-height: 412px;
   object-fit: cover;
 }
 
 .hotel-container {
   display: flex;
+  flex-wrap: wrap;
   margin-right: 70px;
 }
 
 .infrastructure-price {
-  width: 300px;
-  margin-left: 40px;
+  width: 288px;
+  border: none;
+  padding: 0;
   margin-right: 0;
+  margin-left: 40px;
 }
 
 .infrastructure-filter-group {
@@ -820,13 +818,6 @@ button {
   margin: 0;
 }
 
-.infrastructure-price {
-  width: 288px;
-  border: none;
-  padding: 0;
-  margin-right: 0;
-}
-
 .infrastructure-filter-list {
   padding: 0;
   margin: 0;
@@ -837,7 +828,7 @@ button {
   font-family: inherit;
   font-size: 20px;
   line-height: 24px;
-  color: #ffffff;
+  color: #fff;
   font-weight: 700;
   padding: 0;
   margin-bottom: 33px;
@@ -848,7 +839,7 @@ button {
   font-family: inherit;
   font-size: 18px;
   line-height: 23px;
-  color: #ffffff;
+  color: #fff;
   font-weight: 400;
 }
 
@@ -856,7 +847,7 @@ button {
   font-family: inherit;
   font-size: 20px;
   line-height: 24px;
-  color: #ffffff;
+  color: #fff;
   font-weight: 700;
   padding: 0;
   margin: 0;
@@ -868,7 +859,7 @@ button {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   background-color: #82B3D3;
   text-transform: uppercase;
   padding: 8px 50px;
@@ -885,13 +876,12 @@ button {
 }
 
 .button-use:focus {
-  outline: none;
   background-color: #68A2CA;
 }
 
 .button-use:active {
-  color: #ffffff;
-  opacity: 30%;
+  color: #fff;
+  opacity: 0.3;
 }
 
 .button-use:disabled {
@@ -903,7 +893,7 @@ button {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   background-color: transparent;
   text-transform: uppercase;
   width: 191px;
@@ -913,8 +903,8 @@ button {
 }
 
 .button-reset:hover {
-  color: #ffffff;
-  opacity: 30%;
+  color: #fff;
+  opacity: 0.3;
 }
 
 .button-reset:focus {
@@ -924,8 +914,8 @@ button {
 }
 
 .button-reset:active {
-  color: #ffffff;
-  opacity: 30%;
+  color: #fff;
+  opacity: 0.3;
 }
 
 .button-reset:disabled {
@@ -943,7 +933,7 @@ button {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #000000;
+  color: #000;
   margin: 0;
   padding: 0;
   width: 340px;
@@ -965,6 +955,7 @@ button {
 .hotels-finder-list {
   display: flex;
   flex-wrap: wrap;
+  width: 161px;
   gap: 8px;
   margin: 0;
   padding: 0;
@@ -986,7 +977,7 @@ button {
 .hotels-finder-view:hover {
   border: 2px solid;
   border-radius: 4px;
-  border-color: #000000;
+  border-color: #000;
 }
 
 .hotels-finder-view:focus {
@@ -998,13 +989,13 @@ button {
 .hotels-finder-view:active {
   border: 2px solid;
   border-radius: 4px;
-  border-color: #000000;
+  border-color: #000;
 }
 
 .hotels-finder-view-selected {
   border: 2px solid;
   border-radius: 4px;
-  border-color: #000000;
+  border-color: #000;
 }
 
 .hotels-finder-rating {
@@ -1012,39 +1003,36 @@ button {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  color: #333333;
-  border: 2px solid rgba( 0, 0, 0, 0.3);
+  color: #333;
+  border: 2px solid rgb( 0 0 0 / 30%);
   border-radius: 4px;
   width: 292px;
   max-height: 49px;
   padding: 11px 35px 11px 16px;
-  background-color: #ffffff;
+  background-color: #fff;
   margin-left: 139px;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
-
-  background-image: url(../images/arrow-down.svg);
+          appearance: none;
+  background-image: url("../images/arrow-down.svg");
   background-size: 12px 7px;
   background-position: right 20px top 21px;
   background-repeat: no-repeat;
 }
 
 .hotels-finder-rating:hover {
-  border: 2px solid rgba( 104, 162, 202, 1);
+  border: 2px solid rgb( 104 162 202 / 100%);
   outline: none;
 }
 
 .hotels-finder-rating:focus {
-  border: 2px solid rgba( 104, 162, 202, 1);
+  border: 2px solid rgb( 104 162 202 / 100%);
   outline: none;
 }
 
 .hotels-finder-rating:disabled {
-  border: 2px solid rgba( 0, 0, 0, 0.3);
-  color: #000000;
-  opacity: 30%;
+  border: 2px solid rgb( 0 0 0 / 30%);
+  color: #000;
+  opacity: 0.3;
 }
 
 .button-container {
@@ -1060,8 +1048,8 @@ button {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  color: #333333;
-  background-color: #ffffff;
+  color: #333;
+  background-color: #fff;
 }
 
 .product-list {
@@ -1105,7 +1093,7 @@ button {
   margin-bottom: 4px;
   object-fit: cover;
   width: 300px;
-  min-height: 212px;
+  height: 212px;
 }
 
 .product-card-content {
@@ -1123,14 +1111,14 @@ button {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
-  color: #000000;
+  color: #000;
   text-decoration: none;
   margin: 0;
   padding: 0;
 }
 
 .product-card-price {
-  color: #333333;
+  color: #333;
   margin: 0;
 }
 
@@ -1143,7 +1131,7 @@ button {
   text-align: center;
   align-self: center;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   background-color:#756157;
   padding: 8px 26px;
   border-radius: 4px;
@@ -1155,12 +1143,11 @@ button {
 
 .product-card-details:focus {
   background-color: #615048;
-  outline: none;
 }
 
 .product-card-details:active {
-  color: #ffffff;
-  opacity: 30%;
+  color: #fff;
+  opacity: 0.3;
   background-color: #756157;
 }
 
@@ -1174,7 +1161,7 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   background-color: #82B3D3;
   border-radius: 4px;
   border: none;
@@ -1186,12 +1173,11 @@ button {
 
 .button-favorites:focus {
   background-color: #68A2CA;
-  outline: none;
 }
 
 .button-favorites:active {
-  color: #ffffff;
-  opacity: 30%;
+  color: #fff;
+  opacity: 0.3;
 }
 
 .button-favorites:disabled {
@@ -1205,7 +1191,7 @@ button {
   text-transform: uppercase;
   align-self: center;
   text-align: center;
-  color: #333333;
+  color: #333;
   background-color: #f2f2f2;
   border-radius: 4px;
   padding: 9px 22px 8px 23px;
@@ -1217,7 +1203,7 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   background-color: #7DB54F;
   border: none;
 }
@@ -1228,18 +1214,16 @@ button {
 
 .button-choice:focus {
   background-color: #6C9E42;
-  outline: none;
 }
 
 .button-choice:active {
-  color: #ffffff;
-  opacity: 30%;
+  color: #fff;
+  opacity: 0.3;
 }
 
 .button-choice:disabled {
   background-color: #E5E5E5;
 }
-
 
 .subscription-hotels {
   display: flex;
@@ -1247,11 +1231,13 @@ button {
   text-align: center;
   align-items: center;
   margin: 96px 258px 104px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .pagination-container {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 1060px;
   padding: 0;
   margin: 0;
   margin-top: 40px;
@@ -1259,6 +1245,7 @@ button {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -1279,7 +1266,7 @@ button {
   font-weight: 700;
   text-align: center;
   background: #82B3D3;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   border-radius: 4px;
 }
@@ -1290,51 +1277,50 @@ button {
 
 .pagination-link:focus {
   background-color: #68A2CA;
-  outline: none;
 }
 
 .pagination-link:active {
-  color: #ffffff;
-  opacity: 30%;
+  color: #fff;
+  opacity: 0.3;
 }
 
 .pagination-current {
-  color: #000000;
+  color: #000;
   background: #f2f2f2;
 }
 
 .pagination-current:hover {
-  color: #000000;
+  color: #000;
   background: #f2f2f2;
 }
 
 .pagination-current:focus {
-  color: #000000;
+  color: #000;
   background: #f2f2f2;
 }
 
-.pagination-current:activet {
-  color: #000000;
+.pagination-current:active {
+  color: #000;
   background: #f2f2f2;
 }
 
 .pagination-more {
-  color: #000000;
+  color: #000;
   background: none;
 }
 
 .pagination-more:hover {
-  color: #000000;
+  color: #000;
   background: none;
 }
 
 .pagination-more:focus {
-  color: #000000;
+  color: #000;
   background: none;
 }
 
 .pagination-more:active {
-  color: #000000;
+  color: #000;
   background: none;
 }
 
@@ -1353,14 +1339,13 @@ button {
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
-  color: #ffffff;
+  color: #fff;
 }
 
 .breadcrumbs-link:first-child {
   display: block;
-  width: 13px;
   height: 15px;
-  background-image: url(../images/home-hotels.svg);
+  background-image: url("../images/home-hotels.svg");
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -1379,17 +1364,17 @@ button {
 }
 
 .hotels-simple:hover {
-  color: #ffffff;
-  opacity: 60%;
+  color: #fff;
+  opacity: 0.6;
 }
 
 .hotels-simple:focus {
-  color: #ffffff;
+  color: #fff;
 }
 
 .hotels-simple:active {
-  color: #ffffff;
-  opacity: 60%;
+  color: #fff;
+  opacity: 0.6;
 }
 
 .breadcrumbs-item {
@@ -1403,7 +1388,7 @@ button {
   width: 8px;
   height: 18px;
   margin: 0 auto;
-  background-image: url(../images/arrow-right.svg);
+  background-image: url("../images/arrow-right.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1419,7 +1404,7 @@ button {
   content: "";
   display: block;
   height: 17px;
-  background-image: url(../images/star.svg);
+  background-image: url("../images/star.svg");
   background-repeat: space no-repeat;
   background-size: contain;
 }
@@ -1454,14 +1439,14 @@ button {
 .range-bar {
   position: absolute;
   height: 4px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .range-toggle {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -1497,8 +1482,8 @@ button {
   position: absolute;
   top: 14px;
   right: 20px;
-  color: #000000;
-  opacity: 30%;
+  color: #000;
+  opacity: 0.3;
 }
 
 .control {
@@ -1515,11 +1500,11 @@ button {
   width: 20px;
   height: 20px;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .control:hover .control-mark {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .infrastructure-input:focus + .control-mark {
@@ -1528,7 +1513,7 @@ button {
 }
 
 .control:active .control-mark {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .infrastructure-input[type="checkbox"]:checked + .control-mark::before {
@@ -1538,7 +1523,7 @@ button {
   left: 4px;
   width: 12px;
   height: 10px;
-  background-image: url(../images/mark.svg);
+  background-image: url("../images/mark.svg");
 }
 
 .control-hotel {
@@ -1555,7 +1540,7 @@ button {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .infrastructure-input[type="radio"]:checked + .control-hotel-mark::before {
@@ -1570,7 +1555,7 @@ button {
 }
 
 .control-hotel:hover .control-hotel-mark {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .infrastructure-input:focus + .control-hotel-mark {
@@ -1579,7 +1564,7 @@ button {
 }
 
 .control-hotel:active .control-hotel-mark {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .modal-container {
@@ -1590,19 +1575,22 @@ button {
   height: 100%;
   display: flex;
   background-color: #F2F2F2;
-  opacity: 80%;
+}
+
+.modal-content {
+  padding: 64px 70px;
 }
 
 .modal {
   position: relative;
   margin: auto;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .modal-auth {
   width: 717px;
   border-radius: 30px;
-  background-color: #ffffff;
+  background-color: #fff;
   position: relative;
   margin-top: 0;
 }
@@ -1611,19 +1599,21 @@ button {
   position: absolute;
   padding: 0;
   top: 64px;
-  right: 52px;
+  right: 53px;
   width: 53px;
   height: 53px;
-  background-color: #ffffff;
-  border: none;
-  cursor: pointer;
+  background-color: #fff;
 }
 
 .modal-close {
-  width: 52px;
-  height: 52px;
+  position: absolute;
+  width: 53px;
+  height: 53px;
   border-radius: 50%;
   background-color: #f2f2f2;
+  top: 64px;
+  right: 52px;
+  cursor: pointer;
 }
 
 .modal-close::before,
@@ -1651,18 +1641,14 @@ button {
 }
 
 .modal-close:focus {
+  outline: none;
   background-color: #e5e5e5;
   border: 3px solid #83B3D3;
-  outline: none;
 }
 
 .modal-close:active {
   fill: #e5e5e5;
-  opacity: 30%;
-}
-
-.modal-close-button {
-  outline: none;
+  opacity: 0.3;
 }
 
 .modal-title {
@@ -1673,47 +1659,31 @@ button {
   text-transform: uppercase;
   width: 415px;
   margin: 0;
-  margin-top: 64px;
   margin-bottom: 64px;
-  padding-left: 70px;
   padding-right: 131px;
-  color: #000000;
+  color: #000;
 }
 
 .field-group {
-  display: flex;
-  flex-wrap: wrap;
-  width: 557px;
-  justify-content: space-between;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: 137px 440px;
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.auth-form {
-  display: grid;
-  grid-template-columns: 263px 263px;
-  gap: 28px 71px;
-  margin: 64px 70px;
+  border: none;
 }
 
 .field-group-adult {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  width: 270px;
   display: flex;
-  justify-content: space-between;
-  position: relative;
-  top: 3px;
-  right: 12px;
+  flex-wrap: wrap;
+  width: 250px;
 }
 
 .field-group-child {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  width: 230px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 244px;
+  position: relative;
 }
 
 .modal-lable {
@@ -1726,30 +1696,30 @@ button {
   align-content: center;
   top: -5px;
   right: 20px;
+  width: 137px;
 }
 
-.modal-lable-small {
-  position: relative;
-}
-
-.modal-lable-small-childrens {
-  position: relative;
-  right: 4px;
+.modal-lable-childrens {
+  width: 100px;
 }
 
 .auth-form-field {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
   border-radius: 4px;
   padding: 17px 20px;
-  width: 380px;
   max-height: 48px;
   border: none;
   background-color: #f2f2f2;
-  background-image: url(../images/calender.svg);
+  background-image: url("../images/calender.svg");
   background-repeat: no-repeat;
   background-position: right 17px top 12px;
   background-size: 16px 15px;
   cursor: pointer;
-  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .auth-form-field:hover {
@@ -1767,7 +1737,7 @@ button {
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
-  color: #000000;
+  color: #000;
 }
 
 .field::placeholder {
@@ -1775,13 +1745,10 @@ button {
 }
 
 .field {
-  width: 82px;
-  max-height: 48px;
+  width: 11px;
+  min-height: 20px;
+  padding: 14px 50px;
   background-image: none;
-}
-
-.field:last-of-type {
-  margin-right: 10px;
 }
 
 .field:focus {
@@ -1794,15 +1761,15 @@ button {
   line-height: 24px;
   font-weight: 700;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   background-color: #82B3D3;
   text-transform: uppercase;
-  width: 557px;
+  width: 577px;
   border-radius: 10px;
   padding: 18px 77px;
   margin: 0;
   border: none;
-  margin-top: 15px;
+  margin-top: 48px;
 }
 
 .button-auth:hover {
@@ -1811,17 +1778,17 @@ button {
 
 .button-auth:focus {
   background-color: #68A2CA;
-  outline: none;
 }
 
 .button-auth:active {
-  color: #ffffff;
-  opacity: 30%;
+  color: #fff;
+  opacity: 0.3;
 }
 
 .field::-webkit-outer-spin-button,
 .field::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1831,7 +1798,10 @@ button {
   font-size: 16px;
   line-height: 20px;
   color: #FF5757;
-  padding-left: 157px;
+  padding-left: 21px;
+  grid-column-start: 2;
+  margin-top: 4px;
+  margin-bottom: 23px;
 }
 
 .free {
@@ -1839,25 +1809,38 @@ button {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
-  padding-left: 157px;
+  color: #000;
+  padding-left: 21px;
+  grid-column-start: 2;
+  margin-top: 4px;
+  margin-bottom: 23px;
+}
+
+.tooltip {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  padding-top: 14px;
+  padding-left: 58px;
 }
 
 .tooltip-icon {
-  padding-top: 9px;
-}
-
-.tooltip-toggle {
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  padding-top: 9px;
+  width: 26px;
+  height: 26px;
   display: block;
 }
 
+.tooltip-toggle {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  display: block;
+  border: none;
+}
+
 .tooltip-text {
-  background-color: #333333;
-  color: #ffffff;
+  background-color: #333;
+  color: #fff;
   font-size: 16px;
   line-height: 19px;
   font-weight: normal;
@@ -1867,7 +1850,7 @@ button {
   display: none;
   width: 216px;
   position: absolute;
-  left: 50%;
+  left: 87%;
   transform: translateX(-50%);
   z-index: 1;
   margin-top: 12px;
@@ -1879,7 +1862,7 @@ button {
   left: 115px;
   top: -19px;
   border: 10px solid transparent;
-  border-top: 10px solid #333333;
+  border-top: 10px solid #333;
   transform: rotate(180deg);
 }
 
@@ -1888,98 +1871,35 @@ button {
   display: block;
 }
 
-.form-label-icon {
-  position: relative;
-  padding-right: 16px;
-}
-
-.tooltip {
-  position: absolute;
-  margin-top: 0;
-  margin-left: 57px;
-  width: 26px;
-  height: 26px;
-}
-
 .button-minus {
-  position: absolute;
   width: 21px;
-  height: 21px;
-  top: 9px;
-  left: 104px;
   background-color: inherit;
 }
 
 .button-style {
    fill: #756157;
-   opacity: 30%;
+   opacity: 0.3;
 }
 
 .button-style:hover {
-  fill: #000000;
+  fill: #000;
   opacity: 1;
 }
 
 .button-style:active {
   fill: #756157;
-  opacity: 30%;
-}
-
-.button-style-minus {
-  position: relative;
-  top: 9px;
-  left: 150px;
+  opacity: 0.3;
 }
 
 .button-plus {
-  position: absolute;
   width: 21px;
   height: 21px;
-  top: 9px;
-  right: 33px;
-  background-color: inherit;
+  background-color: red;
 }
 
 .button-plus-first {
-  position: absolute;
-  width: 21px;
   height: 21px;
-  top: 9px;
-  right: 17px;
   background-color: inherit;
-}
-
-.button-minus-first {
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  top: 8px;
-  left: 149px;
-  background-color: inherit;
-}
-
-.button-modal-style:focus {
-  border: 3px solid #83B3D3;
-  border-radius: 4px;
-  outline: none;
-}
-
-.button-style-plus {
-  position: absolute;
-  left: 232px;
-  top: 9px;
-}
-
-.button-style-minus-second {
-  position: absolute;
-  left: 105px;
-  top: 9px;
-}
-
-.button-style-plus-second {
-  position: absolute;
-  right: 34px;
-  top: 9px;
 }
 
 .separator {
@@ -1988,6 +1908,55 @@ button {
   background-color: #e5e5e5;
 }
 
-.modal-container-close {
-  display: none;
+.input-group {
+  display: flex;
+  align-items: center;
+  width: 110px;
+  height: 48px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
 }
+
+.input-group:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input-group-child {
+  margin-left: 30px;
+}
+
+.input-group button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-group button:focus {
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 0 13px;
+  border: none;
+  height: 48px;
+  box-sizing: border-box;
+}
+
+.field-group-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* .modal-container-close {
+  display: none;
+} */
