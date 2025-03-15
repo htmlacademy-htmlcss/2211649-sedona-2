@@ -49,12 +49,12 @@
         <img class="logo" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону">
       </section>
 
-      <section class="clickbite" data-test="advantages">
+      <section class="clickbite">
         <h2 class="clickbite-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="clickbite-subscription">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
 
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
        <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantages-list">
             <li class="advantages-item advantages-large">
@@ -167,5 +167,82 @@
       </a>
       </div>
     </footer>
+
+  <div class="modal-container">
+    <div class="modal modal-auth" data-test="modal">
+      <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <div class="modal-wrappper">
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+
+          <fieldset class="field-group">
+            <label class="modal-lable" for="auth-date-in">Дата Заезда:</label>
+            <input class="auth-form-field" id="auth-date-in" name="auth-date-in" type="text" placeholder="27 апреля 2020" required>
+            <span class="warning">Мы не можем отправить вас в прошлое.</span>
+          </fieldset>
+
+          <fieldset class="field-group">
+            <label class="modal-lable" for="auth-date-out">Дата Выезда:</label>
+            <input class="auth-form-field" id="auth-date-out" name="auth-date-out" type="text" placeholder="1 сентября 2023" required >
+            <span class="free">На эти даты есть свободные номера. Пока есть.</span>
+          </fieldset>
+
+          <div class="field-group-container">
+          <fieldset class="field-group field-group-adult">
+            <label class="modal-lable modal-lable-small" for="adults">Взрослые:</label>
+            <div class="input-group">
+              <button class="button-minus-first button-modal-style" type="button">
+                <svg class="button-style button-style-minus" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                  <path d="M3 9V11H17V9H3Z"/>
+                </svg>
+              </button>
+              <input class="auth-form-field field" tabindex="-1" id="adults" name="adults" type="number" placeholder="2">
+              <button class="button-plus-first button-modal-style" type="button">
+                <svg class="button-style button-style-plus" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="20" height="20">
+                  <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                </svg>
+              </button>
+            </div>
+          </fieldset>
+
+          <fieldset class="field-group field-group-child">
+            <label class="modal-lable modal-lable-small modal-lable-childrens" for="childrens">Дети:</label>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                <svg class="tooltip-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="none">
+                  <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white"/>
+                </svg>
+              </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </span>
+            </span>
+            <div class="input-group input-group-child">
+              <button class="button-minus button-modal-style" type="button">
+              <svg class="button-style button-style-minus-second" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <path d="M3 9V11H17V9H3Z"/>
+              </svg>
+              </button>
+              <input class="auth-form-field field" tabindex="-1" id="childrens" name="childrens" type="number" placeholder="2">
+              <button class="button-plus button-modal-style" type="button">
+                <svg class="button-style button-style-plus-second" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="20" height="20">
+                  <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z"/>
+                </svg>
+              </button>
+            </div>
+          </fieldset>
+          </div>
+
+          <button class="button button-auth" type="submit">Найти</button>
+          <button class="modal-close-button" tabindex="-1" type="button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <div class="modal-close" tabindex="0"></div>
+        </form>
+         </div>
+      </section>
+    </div>
+  </div>
   </body>
 </html>
