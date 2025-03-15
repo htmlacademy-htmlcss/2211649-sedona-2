@@ -138,6 +138,11 @@ button {
   opacity: 0.3;
 }
 
+.navigation-link:disabled {
+  color: #756157;
+  opacity: 0.3;
+}
+
 .navigation-link-current-main::before {
   position: absolute;
   bottom: -2px;
@@ -660,6 +665,10 @@ button {
   border-radius: 4px;
 }
 
+.price-input:disabled {
+  outline: 3px solid #FF5757;
+}
+
 .price-input::placeholder {
   color: #000;
 }
@@ -711,6 +720,11 @@ button {
 }
 
 .phone:active {
+  color: #756157;
+  opacity: 0.3;
+}
+
+.phone:disabled {
   color: #756157;
   opacity: 0.3;
 }
@@ -789,6 +803,11 @@ button {
   opacity: 0.3;
 }
 
+.footer-social-link:disabled {
+  fill: #68A2CA;
+  opacity: 0.3;
+}
+
 .academy-logo-footer {
   fill: #000;
 }
@@ -802,6 +821,11 @@ button {
 }
 
 .academy-logo-footer:active {
+  color: #756157;
+  opacity: 0.3;
+}
+
+.academy-logo-footer:disabled {
   color: #756157;
   opacity: 0.3;
 }
@@ -1036,6 +1060,10 @@ button {
   border: 2px solid;
   border-radius: 4px;
   border-color: #000;
+}
+
+.hotels-finder-view:disabled {
+  border: 2px solid #FF5757;
 }
 
 .hotels-finder-view-selected {
@@ -1339,6 +1367,11 @@ button {
   opacity: 0.3;
 }
 
+.pagination-link:disabled {
+  color: #fff;
+  opacity: 0.3;
+}
+
 .pagination-current {
   color: #000;
   background: #f2f2f2;
@@ -1359,6 +1392,10 @@ button {
   background: #f2f2f2;
 }
 
+.pagination-current:disabled {
+  color: #F2F2F2;
+}
+
 .pagination-more {
   color: #000;
   background: none;
@@ -1377,6 +1414,10 @@ button {
 .pagination-more:active {
   color: #000;
   background: none;
+}
+
+.pagination-more:disabled {
+  color: #E5E5E5;
 }
 
 .breadcrumbs {
@@ -1428,6 +1469,11 @@ button {
 }
 
 .hotels-simple:active {
+  color: #fff;
+  opacity: 0.6;
+}
+
+.hotels-simple:disabled {
   color: #fff;
   opacity: 0.6;
 }
@@ -1519,6 +1565,11 @@ button {
   border: 2px solid #83B3D3;
 }
 
+.range-toggle:disabled {
+  border: 2px solid rgb(0 0 0 / 25%);
+  outline: none;
+}
+
 .toggle-min {
   top: -8px;
 }
@@ -1569,6 +1620,10 @@ button {
 .infrastructure-input:focus + .control-mark {
   outline: 3px solid #83B3D3;
   appearance: none;
+}
+
+.infrastructure-input:disabled + .control-mark {
+  opacity: 0.3;
 }
 
 .control:active .control-mark {
@@ -1624,6 +1679,11 @@ button {
 .control-hotel:active .control-hotel-mark {
   opacity: 0.3;
 }
+
+.infrastructure-input:disabled + .control-hotel-mark {
+  opacity: 0.3;
+}
+
 
 .modal-container {
   position: fixed;
@@ -1706,6 +1766,11 @@ button {
   opacity: 0.3;
 }
 
+.modal-close:disabled {
+  fill: #e5e5e5;
+  opacity: 0.3;
+}
+
 .modal-title {
   font-family: inherit;
   font-size: 30px;
@@ -1714,7 +1779,7 @@ button {
   text-transform: uppercase;
   width: 415px;
   margin: 0;
-  margin-bottom: 64px;
+  margin-bottom: 63px;
   padding-right: 131px;
   color: #000;
 }
@@ -1765,12 +1830,12 @@ button {
   font-weight: 700;
   border-radius: 4px;
   padding: 12px 20px;
-  max-height: 48px;
+  width: 398px;
   border: none;
   background-color: #f2f2f2;
   background-image: url("../images/calender.svg");
   background-repeat: no-repeat;
-  background-position: right 17px top 12px;
+  background-position: right 20px top 16px;
   background-size: 16px 15px;
   cursor: pointer;
   -webkit-appearance: textfield;
@@ -1783,8 +1848,12 @@ button {
 
 .auth-form-field:focus {
   background-color: #E5E5E5;
-  border: 3px solid #83B3D3;
-  outline: none;
+  outline: 3px solid #83B3D3;
+  appearance: none;
+}
+
+.auth-form-field:disabled {
+  opacity: 0.3;
 }
 
 .auth-form-field::placeholder {
@@ -1809,6 +1878,10 @@ button {
 .field:focus {
   outline: none;
   border: none;
+}
+
+.field:disabled {
+  opacity: 0.3;
 }
 
 .button-auth {
@@ -1836,6 +1909,11 @@ button {
 }
 
 .button-auth:active {
+  color: #fff;
+  opacity: 0.3;
+}
+
+.button-auth:disabled {
   color: #fff;
   opacity: 0.3;
 }
@@ -1875,8 +1953,8 @@ button {
   position: absolute;
   width: 26px;
   height: 26px;
-  padding-top: 14px;
-  padding-left: 58px;
+  padding-top: 13px;
+  padding-left: 61px;
 }
 
 .tooltip-icon {
@@ -1961,16 +2039,6 @@ button {
   opacity: 0.3;
 }
 
-.button-plus {
-  width: 21px;
-  height: 21px;
-  background-color: red;
-}
-
-.button-plus-first {
-  height: 21px;
-  background-color: inherit;
-}
 
 .separator {
   width: 1060px;
@@ -1994,7 +2062,7 @@ button {
 }
 
 .input-group-child {
-  margin-left: 30px;
+  margin-left: 33px;
 }
 
 .input-group button {
@@ -2010,6 +2078,11 @@ button {
 
 .input-group button:focus {
   border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.input-group button:disabled {
+  border: 3px solid #FF5757;
   outline: none;
 }
 

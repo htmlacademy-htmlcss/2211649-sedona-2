@@ -36,7 +36,7 @@
         </a>
       </li>
       <li>
-        <button class="header-button" type="submit" href="#">Хочу сюда</button>
+        <button class="header-button" type="submit">Хочу сюда</button>
       </li>
     </ul>
     </nav>
@@ -65,21 +65,21 @@
             <ul class="infrastructure-filter-list">
               <li class="infrastructure-filter-item">
                 <label class="control">
-                  <input class="infrastructure-input visually-hidden" type="checkbox" name="pool">
+                  <input class="infrastructure-input visually-hidden" type="checkbox" name="pool" required>
                   <span class="control-mark"></span>
                   <span class="control-label">Бассейн</span>
                 </label>
               </li>
               <li class="infrastructure-filter-item">
                 <label class="control">
-                  <input class="infrastructure-input visually-hidden" type="checkbox" name="parking">
+                  <input class="infrastructure-input visually-hidden" type="checkbox" name="parking" required>
                   <span class="control-mark"></span>
                   <span class="control-label">Парковка</span>
                 </label>
               </li>
               <li class="infrastructure-filter-item">
                 <label class="control">
-                  <input class="infrastructure-input visually-hidden" type="checkbox" name="wi-fi">
+                  <input class="infrastructure-input visually-hidden" type="checkbox" name="wi-fi" required>
                   <span class="control-mark"></span>
                   <span class="control-label">Wi-Fi</span>
                 </label>
@@ -92,21 +92,21 @@
             <ul class="infrastructure-filter-list">
               <li class="infrastructure-filter-item">
                 <label class="control-hotel">
-                  <input class="infrastructure-input visually-hidden" type="radio" name="hotel-group">
+                  <input class="infrastructure-input visually-hidden" type="radio" name="hotel-group" required>
                   <span class="control-hotel-mark"></span>
                   <span class="control-label">Гостиницы</span>
                 </label>
               </li>
               <li class="infrastructure-filter-item">
                 <label class="control-hotel">
-                  <input class="infrastructure-input visually-hidden" type="radio" name="hotel-group">
+                  <input class="infrastructure-input visually-hidden" type="radio" name="hotel-group" required>
                   <span class="control-hotel-mark"></span>
                   <span class="control-label">Мотель</span>
                 </label>
               </li>
               <li class="infrastructure-filter-item">
                 <label class="control-hotel">
-                  <input class="infrastructure-input visually-hidden" type="radio" name="hotel-group">
+                  <input class="infrastructure-input visually-hidden" type="radio" name="hotel-group" required>
                   <span class="control-hotel-mark"></span>
                   <span class="control-label">Апартаменты</span>
                 </label>
@@ -119,12 +119,12 @@
             <div class="price-form-pricemin">
               <div class="input-container">
               <label class="visually-hidden" for="price-start">0 рублей</label>
-              <input class="price-input" type="number" id="price-start" name="price-start"  placeholder="0">
+              <input class="price-input" type="number" id="price-start" name="price-start"  placeholder="0" required>
               <span class="input-text">от</span>
             </div>
             <div class="input-container">
               <label class="visually-hidden" for="price-maximum">Максимальная сумма</label>
-              <input class="price-input price-input-second" type="number" id="price-maximum" name="price-maximum" placeholder="9000">
+              <input class="price-input price-input-second" type="number" id="price-maximum" name="price-maximum" placeholder="9000" required>
               <span class="input-text">до</span>
             </div>
             </div>
