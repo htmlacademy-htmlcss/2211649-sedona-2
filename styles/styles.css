@@ -868,7 +868,8 @@ button {
   font-weight: 700;
   padding: 0;
   margin: 0;
-  margin-bottom: 39px;
+  padding-top: 7px;
+  margin-bottom: 33px;
 }
 
 .button-use {
@@ -1098,7 +1099,7 @@ button {
 .product-card-title {
   font-family: inherit;
   font-size: 24px;
-  line-height: 27px;
+  line-height: 28px;
   font-weight: 700;
   padding: 0;
   margin: 0;
@@ -1119,6 +1120,15 @@ button {
   gap: 16px 20px;
 }
 
+.product-card-price {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  margin: 0;
+  color: #000;
+}
+
 .product-card-price-number {
   text-align: right;
 }
@@ -1132,11 +1142,6 @@ button {
   text-decoration: none;
   margin: 0;
   padding: 0;
-}
-
-.product-card-price {
-  color: #333;
-  margin: 0;
 }
 
 .product-card-details {
@@ -1450,7 +1455,7 @@ button {
   position: relative;
   height: 4px;
   background-color: #D9D9D9;
-  margin-top: 40px;
+  margin-top: 44px;
 }
 
 .range-bar {
