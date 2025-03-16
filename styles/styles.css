@@ -148,6 +148,7 @@ button {
   bottom: -2px;
   height: 2px;
   padding-left: 68px;
+  padding-right: 0;
   background-color: #756257;
   content: "";
 }
@@ -157,6 +158,7 @@ button {
   bottom: -2px;
   height: 2px;
   padding-left: 93px;
+  padding-right: 0;
   background-color: #756257;
   content: "";
 }
@@ -340,7 +342,7 @@ button {
 
 .advantages-description::before {
   position: absolute;
-  bottom: 72px;
+  top: -30px;
   height: 2px;
   left: 85px;
   right: 85px;
@@ -773,6 +775,7 @@ button {
 }
 
 .input-group svg {
+  position: absolute;
   width: 20px;
   height: 20px;
   fill: #000;
@@ -1425,7 +1428,7 @@ button {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  margin-bottom: 40px;
+  margin-bottom: 53px;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -1436,18 +1439,16 @@ button {
   line-height: 21px;
   font-weight: 400;
   color: #fff;
+  cursor: pointer;
 }
 
-.breadcrumbs-link:first-child {
+.home-link {
   display: block;
   height: 15px;
   background-image: url("../images/home-hotels.svg");
   background-repeat: no-repeat;
   background-position: left;
-}
-
-.breadcrumbs-link:nth-last-child(1) {
-  padding-left: 24px;
+  z-index: 1;
 }
 
 .hotels-simple {
@@ -1478,11 +1479,37 @@ button {
   opacity: 0.6;
 }
 
+.breadcrumbs-link:nth-last-child(1) {
+  position: absolute;
+  padding-left: 21px;
+}
+
+.breadcrumbs-link:focus {
+  outline: none;
+}
+
+.home-link:disabled {
+  fill: #E5E5E5;
+}
+
+.home-link:focus {
+  outline: auto 1px #1A73E8;
+}
+
+.hotels-link:focus .hotels-simple{
+  outline: auto 1px #1A73E8;
+}
+
+.hotels-link:disabled .hotels-simple{
+  color: #fff;
+  opacity: 0.6;
+}
+
 .breadcrumbs-item {
   position: relative;
 }
 
-.breadcrumbs-link::before {
+.hotels-link::before {
   position: absolute;
   content: "";
   display: block;
@@ -1611,6 +1638,7 @@ button {
   height: 20px;
   border-radius: 4px;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .control:hover .control-mark {
@@ -1624,6 +1652,7 @@ button {
 
 .infrastructure-input:disabled + .control-mark {
   opacity: 0.3;
+  cursor: auto;
 }
 
 .control:active .control-mark {
@@ -1655,6 +1684,7 @@ button {
   height: 20px;
   border-radius: 50%;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .infrastructure-input[type="radio"]:checked + .control-hotel-mark::before {
@@ -1682,6 +1712,7 @@ button {
 
 .infrastructure-input:disabled + .control-hotel-mark {
   opacity: 0.3;
+  cursor: auto;
 }
 
 
@@ -2038,7 +2069,6 @@ button {
   fill: #756157;
   opacity: 0.3;
 }
-
 
 .separator {
   width: 1060px;
