@@ -147,8 +147,8 @@ button {
   position: absolute;
   bottom: -2px;
   height: 2px;
-  padding-left: 68px;
-  padding-right: 0;
+  left: 16px;
+  right: 16px;
   background-color: #756257;
   content: "";
 }
@@ -157,8 +157,8 @@ button {
   position: absolute;
   bottom: -2px;
   height: 2px;
-  padding-left: 93px;
-  padding-right: 0;
+  left: 16px;
+  right: 16px;
   background-color: #756257;
   content: "";
 }
