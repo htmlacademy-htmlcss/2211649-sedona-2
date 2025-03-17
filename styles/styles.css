@@ -1097,12 +1097,12 @@ img {
 }
 
 .hotels-finder-rating:hover {
-  border: 2px solid hsla(204, 55%, 60%, 1);
+  border: 2px solid #68A2CA;
   outline: none;
 }
 
 .hotels-finder-rating:focus {
-  border: 2px solid hsla(204, 55%, 60%, 1);
+  border: 2px solid #68A2CA;
   outline: none;
 }
 
